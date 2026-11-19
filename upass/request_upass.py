@@ -15,7 +15,7 @@ from typing import Callable
 
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from config import Credentials
+from .config import Credentials
 from upass.exceptions import MfaFailedError, NoPrivilegeError, UPassError
 from upass.pages import SfuMfaPage, SfuLoginPage, UPassHomePage
 

@@ -1,9 +1,9 @@
 """Entry point: wires config, TOTP, browser and flow together.
 
 Run with:
-    python -m upass_automation                    # headless Chrome
-    python -m upass_automation --browser firefox
-    python -m upass_automation --headed           # watch it run
+    python -m upass                    # headless Chrome
+    python -m upass --browser firefox
+    python -m upass --headed           # watch it run
 
 Exit codes: 0 = requested or nothing to request, 1 = workflow failure,
 2 = setup problem (credentials or browser driver).
