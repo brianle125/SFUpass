@@ -1,0 +1,3 @@
+# Runtime dependencies
+selenium>=4.10,<5
+pyotp>=2.8,<3  

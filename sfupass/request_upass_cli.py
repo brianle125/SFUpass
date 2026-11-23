@@ -21,7 +21,7 @@ from selenium.webdriver.remote.webdriver import WebDriver
 from .config import load_credentials
 from .exceptions import ConfigError, UPassError
 from .request_upass import RunResult, UPassFlow
-from upass.totp import get_mfa  
+from sfupass.totp import get_mfa  
 
 log = logging.getLogger("upass_automation")
 

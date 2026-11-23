@@ -1,4 +1,5 @@
 {
     "username": "username",
-    "password": "password"
+    "password": "password",
+    "secret_key": "key"
 }

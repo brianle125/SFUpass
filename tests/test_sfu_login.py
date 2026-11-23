@@ -1,7 +1,7 @@
 import pytest
 
-from upass.exceptions import InvalidCredentialsError
-from upass.pages import SfuLoginPage
+from sfupass.exceptions import InvalidCredentialsError
+from sfupass.pages import SfuLoginPage
 
 # Simulate MFA redirect upon successful login
 LOGIN = """

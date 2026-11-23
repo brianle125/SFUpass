@@ -1,7 +1,7 @@
 import pytest
 
-from upass.exceptions import NotEligibleError
-from upass.pages import UPassHomePage, SfuMfaPage
+from sfupass.exceptions import NotEligibleError
+from sfupass.pages import UPassHomePage, SfuMfaPage
 
 
 # Sample HTML snippets
