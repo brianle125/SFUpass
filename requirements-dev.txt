@@ -1,0 +1,12 @@
+-r requirements.txt
+
+# Testing
+pytest>=7.4
+pytest-html>=4.0
+pytest-xdist>=3.3
+pytest-rerunfailures>=12.0
+pytest-cov>=4.1
+
+# Linting / typing
+ruff>=0.4
+mypy>=1.8
