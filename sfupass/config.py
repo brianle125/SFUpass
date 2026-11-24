@@ -10,7 +10,6 @@ tracebacks by accident.
 from __future__ import annotations
 
 import json
-import os
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -27,14 +26,6 @@ class Credentials:
 
 
 def load_credentials(path: Path | str | None = None) -> Credentials:
-    env = (
-        os.getenv("UPASS_USERNAME"),
-        os.getenv("UPASS_PASSWORD"),
-        os.getenv("UPASS_TOTP_SECRET"),
-    )
-    if all(env):
-        return Credentials(*env)  # type: ignore[arg-type]
-
     config_path = Path(path) if path else DEFAULT_CONFIG_PATH
     try:
         data = json.loads(config_path.read_text(encoding="utf-8"))
